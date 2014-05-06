@@ -1,0 +1,27 @@
+{
+    "name": "LOL",
+    "version": "0.0.1",
+    "description": "LOLpuebla Game Challenge",
+    "main": "app.js",
+    "dependencies": {
+        "express": "~4.1.1",
+        "logfmt": "~1.1.2"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "N/A"
+    },
+    "repository": {
+        "type": "git",
+        "url": "lolpuebla"
+    },
+    "keywords": [
+        "lol",
+        "league",
+        "of",
+        "legends",
+        "puebla"
+    ],
+    "author": "bialikoer@gmail.com",
+    "license": "GPL"
+}
