@@ -1,0 +1,69 @@
+/*===========================
+============Fuente===========
+===========================*/
+
+/*===========================
+============General==========
+===========================*/
+body, html, div, p, ul, li{
+    margin: 0;
+    padding: 0;
+}
+body{
+	background: #151618 url(images/general-bg.png) no-repeat top center;
+	font-family: 'Open Sans', sans-serif;
+	-webkit-font-smoothing:antialiased;
+ 	font-smoothing:antialiased;
+ 	text-rendering:optimizeLegibility;
+}
+.me-gusta-btn{
+    margin: 30px auto;
+    display:block;
+}
+.logo{
+    display:block;
+    margin:90px auto;
+}
+.container{
+    width: 800px;
+    margin: 0 auto;
+    padding: 0;
+}
+.mini-logo{
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    margin-left: -102px;   
+}
+.main-content{
+    background: url(images/content-bg.png) no-repeat top center;
+    width: 538px;
+    height:319px;
+    margin: 55px auto;
+    padding: 80px 50px 50px 50px;
+    font-size: 14px;
+    color: #d8d8d8;
+}
+.intro{
+    text-align:center;
+    padding-bottom:30px;
+}
+input[type="text"]{
+    font-size:24px;
+    width: 500px;
+    padding: 12px 20px;
+    border: none;
+}
+.compartir{
+    background: url(images/compartir-btn.png) no-repeat top center;
+    width:323px;
+    height:65px;
+    border:none;
+    display:block;
+    margin:20px auto;
+    cursor:pointer;
+}
+.compartir:hover{
+    background-position: 0px -67px;
+}
