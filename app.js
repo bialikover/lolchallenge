@@ -7,7 +7,7 @@ app.use("/images", express.static(__dirname + '/images'));
 app.use("/css", express.static(__dirname + '/css'));
 app.use(logfmt.requestLogger());
 
-app.get('/', function(req, res) {
+app.all('/', function(req, res) {
     res.sendfile('./step2.html');
 });
 
