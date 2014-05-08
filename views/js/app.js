@@ -1,6 +1,6 @@
 window.fbAsyncInit = function() {
   FB.init({
-    appId      : '311397385570136',
+    appId      : '685626324807687',
     cookie     : true,  // enable cookies to allow the server to access 
                         // the session
     xfbml      : true,  // parse social plugins on this page
@@ -8,7 +8,6 @@ window.fbAsyncInit = function() {
   });
 FB.getLoginStatus(function(response) {
         if (response.status === 'connected') {
-            console.log('Logged in.');
             checkifLikes();
             getUserInfo();
         }else {
@@ -35,7 +34,7 @@ function checkifLikes(){
 }
 
 function hideAll(){
-    $("#loader").hide();
+    $(".loader").hide();
     $("#paso1").hide();
     $("#paso2").hide();
     $("#congrats").hide();

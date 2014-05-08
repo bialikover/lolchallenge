@@ -8,7 +8,7 @@ var userSchema = mongoose.Schema({
 
     fbid: String,
     email: String,
-    name: String
+    name: String,
     summoner: {
         type: String,
         default: null
