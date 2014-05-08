@@ -1,27 +1,33 @@
 {
-    "name": "LOL",
-    "version": "0.0.1",
-    "description": "LOLpuebla Game Challenge",
-    "main": "app.js",
-    "dependencies": {
-        "express": "~4.1.1",
-        "logfmt": "~1.1.2"
-    },
-    "devDependencies": {},
-    "scripts": {
-        "test": "N/A"
-    },
-    "repository": {
-        "type": "git",
-        "url": "lolpuebla"
-    },
-    "keywords": [
-        "lol",
-        "league",
-        "of",
-        "legends",
-        "puebla"
-    ],
-    "author": "bialikoer@gmail.com",
-    "license": "GPL"
+  "name": "LOL",
+  "version": "0.0.1",
+  "description": "LOLpuebla Game Challenge",
+  "main": "server.js",
+  "dependencies": {
+    "express": "~4.1.1",
+    "ejs": "~0.8.5",
+    "logfmt": "~1.1.2",
+    "passport-facebook": "~1.0.3",
+    "mongoose": "~3.8.8",
+    "connect-flash": "~0.1.1",
+    "bcrypt-nodejs": "latest",
+    "newrelic": "~1.5.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "N/A"
+  },
+  "repository": {
+    "type": "git",
+    "url": "lolpuebla"
+  },
+  "keywords": [
+    "lol",
+    "league",
+    "of",
+    "legends",
+    "puebla"
+  ],
+  "author": "bialikoer@gmail.com",
+  "license": "GPL"
 }
