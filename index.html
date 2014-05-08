@@ -2,6 +2,17 @@
 <html>
     <head>
         <title>Lol Puebla</title>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script>
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "http://connect.facebook.net/es_MX/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <script src="js/facebook.js"></script>
           
         <!-- Meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,9 +31,26 @@
         <![endif]-->
     </head>
     <body>
-        <div class="container">
+        <div class="container" id="paso1">
             <img src="images/me-gusta-btn.png" alt="haz click en me gusta" class="me-gusta-btn" />
             <img src="images/logo.png" alt="LoL Puebla" class="logo" />
+        </div>
+
+        <div class="container" id="paso2" style="display:none">
+            <img src="images/logo-chico.png" alt="LoL Puebla" class="mini-logo" />
+            <div class="main-content">
+                <div class="intro">
+                    <p>Para participar por los <b>2500 RP</b> debes ingresar tu nombre de invocador y compartir esta promoción de forma <b>pública</b> en tu muro.</p>
+                </div>
+                <form>
+                    <input class="summoner-name" type="text" placeholder="Nombre de invocador" />
+                    <input class="compartir" type="submit" value="" />
+                </form>
+                <p class="final-notes">
+                    · Solo puedes participar con 1 nombre de invocador por cuenta de facebook.<br />
+                    · Confirmar que al compartir la privacidad de la publicación sea <b>pública.</b>
+                </p>
+            </div>
         </div>
         
     </body>
