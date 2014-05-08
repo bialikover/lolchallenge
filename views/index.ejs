@@ -8,7 +8,7 @@
          var js, fjs = d.getElementsByTagName(s)[0];
          if (d.getElementById(id)) {return;}
          js = d.createElement(s); js.id = id;
-         js.src = "http://connect.facebook.net/es_MX/sdk.js";
+         js.src = "//connect.facebook.net/es_MX/sdk.js";
          fjs.parentNode.insertBefore(js, fjs);
        }(document, 'script', 'facebook-jssdk'));
     </script>
@@ -20,27 +20,24 @@
         
         <!-- CSS -->
         <link href="css/style.css" rel="stylesheet" type="text/css">
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
         <link rel="shortcut icon" href="http://favicon.ico">
     
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-          <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+          <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="//oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
         <![endif]-->
     </head>
     <body>
-            <div class="loader">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
+        <div class="wait">
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
             </div>
+        </div>
 
         <div class="container" id="paso1" style="display:none">
             <img src="images/me-gusta-btn.png" alt="haz click en me gusta" class="me-gusta-btn" />
@@ -54,13 +51,22 @@
                     <p>Para participar por los <b>2500 RP</b> debes ingresar tu nombre de invocador y compartir esta promoción de forma <b>pública</b> en tu muro.</p>
                 </div>
                 <form>
-                    <input class="summoner-name" type="text" placeholder="Nombre de invocador" />
-                    <input class="compartir" type="submit" value="" />
+                    <input id="summoner-name" class="summoner-name" type="text" placeholder="Nombre de invocador" />
+                    <input id="share" class="compartir" type="submit" value="" />
                 </form>
                 <p class="final-notes">
                     · Solo puedes participar con 1 nombre de invocador por cuenta de facebook.<br />
                     · Confirmar que al compartir la privacidad de la publicación sea <b>pública.</b>
                 </p>
+            </div>
+        </div>
+
+        <div class="container" id="congrats" style="display:none">
+            <img src="images/logo-chico.png" alt="LoL Puebla" class="mini-logo" />
+            <div class="main-content">
+                <div class="intro">
+                    <h1 style="color:#fff">Felicidades <span id="user">Usuario</span> ya estás participando con el nombre de invocador <span id="summoner">Summoner</span></h1>
+                </div>
             </div>
         </div>
         
