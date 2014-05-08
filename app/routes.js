@@ -43,7 +43,7 @@ module.exports = function(app) {
         var user = JSON.parse(req.query.user);
         console.log(user);
         User.findOne({
-            fbid: user.fbid
+            email: user.email
         }, function(err, obj) {
             console.log(obj);
             res.json(obj);
