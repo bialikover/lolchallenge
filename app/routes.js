@@ -59,4 +59,8 @@ module.exports = function(app) {
         });
     });
 
+    app.get('/privacy-policy', function(req, res) {
+        res.render('policy.ejs');
+    });
+
 }
